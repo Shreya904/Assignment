@@ -1,0 +1,169 @@
+/* App.css */
+
+.app {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: row;
+}
+body {
+  background-color: #ffffff;
+  color: black;
+  padding: 20px;
+}
+.page {
+  position: relative;
+}
+.fix {
+  position: sticky;
+  top: 0;
+}
+.white {
+  background-color: white;
+}
+.heading {
+  padding-top: 5px;
+}
+
+.bill-container {
+  border: 1px solid gray;
+  border-radius: 15px;
+  width: 40vw;
+  margin-top: 70px;
+  margin-left: 10px;
+  margin-right: auto;
+  padding: 15px;
+  height: 80vh;
+  position: sticky;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.btn-div {
+  display: flex;
+  justify-content: center;
+  margin-top: auto; /* Pushes the button to the bottom */
+}
+
+.button {
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  display: flex;
+  border-bottom: 1px solid gray;
+  padding: 10px;
+}
+.salon-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  margin-top: 40px;
+}
+.subheading {
+  color: rgb(128, 126, 126);
+}
+.bill {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.header-content {
+  margin-left: 20px;
+}
+.category-sections {
+  width: 53vw;
+}
+.category-section {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.category-section.active {
+  background-color: #f0f0f0; /* Example style for active section */
+}
+
+.category-list-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  width: 55vw;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+.process {
+  display: flex;
+  gap: 18px;
+  font-size: medium;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+  flex: 1 1 calc(33.333% - 20px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.card p {
+  margin: 5px 0;
+}
+
+.category-list {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  background-color: #f1f1f1;
+  scroll-behavior: smooth;
+  flex: 1;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 1000;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.category-button {
+  margin-right: 20px;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  color: black;
+}
+
+.category-button.active {
+  font-weight: bold;
+  color: #ffffff;
+  background-color: black;
+}
+
+.arrow-left,
+.arrow-right {
+  cursor: pointer;
+  font-size: 20px;
+  padding: 5px;
+  z-index: 1; /* Ensure arrows are on top */
+}
+
+.arrow-left {
+  margin-right: 0px; /* Add space between the arrow and the content */
+}
+
+.arrow-right {
+  margin-left: 0px; /* Add space between the arrow and the content */
+}
